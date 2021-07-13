@@ -43,8 +43,10 @@ public class HelloController {
     }
     @GetMapping("/addAlbum")
     public String getAddAlbumView(){
+
         return "NewAlbum";
     }
+
 
     @PostMapping("/albums")
     public RedirectView AlbumAdd(@RequestParam(value = "title") String title ,
