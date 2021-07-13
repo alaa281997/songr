@@ -8,13 +8,13 @@ import javax.persistence.*;
 public class Album {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
+    private Long id;
     private String title;
     private String artist;
     private double songCount;
     private double length;
     private String imageUrl;
-    private Long id;
+
 
     public Album(String title, String artist, double songCount, double length, String imageUrl) {
         this.title = title;
@@ -24,6 +24,8 @@ public class Album {
         this.imageUrl = imageUrl;
     }
 
+    public Album() {
+    }
 
     public String getTitle() {
         return title;

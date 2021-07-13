@@ -8,9 +8,10 @@
 </head>
 <body>
 
-Message #general
-<h3 th:each="album:${album}">
-    <p th:text="${album.id}"></p>
+
+<h3 th:each="album:${albums}">
+
+    <p>Album ID: <span th:text=${album.id}></spanth:text></span></p>
     <p th:text="${album.title}"></p>
     <p th:text="${album.artist}"></p>
     <p th:text="${album.length}"></p>
