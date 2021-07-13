@@ -1,6 +1,6 @@
 # Spring for Full-Stack Web Apps
 I use the Spring Initializer to create a new application with artifact songr with Web and Thymeleaf (and optionally Devtools) dependencies. Download the zip file and extract the directory it contains. 
-I create album class that I can add albums with set of songs
+I create album class that I can add albums with set of songs, and I used psql to save the albums
 #### Table of contents
 | LAB #  |  url |   
 |---     |---|
