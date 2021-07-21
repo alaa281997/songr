@@ -6,10 +6,13 @@
     <link th:href="@{/styles.css}" rel="stylesheet"/>
 
 </head>
-<body>
+<body id="body2">
+
+
 <h3 th:each="album:${album}">
     <p th:text="${album.title}"></p>
     <p th:text="${album.artist}"></p>
 </h3>
+
 </body>
 </html>
