@@ -1,2 +1,9 @@
-package com.example.demo;public interface SongRepository {
+package com.example.demo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface SongRepository extends JpaRepository<Song, Long> {
+
 }

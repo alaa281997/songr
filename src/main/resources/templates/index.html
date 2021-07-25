@@ -5,9 +5,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link th:href="@{/styles.css}" rel="stylesheet"/>
+
 </head>
 <body>
-<p>this from root</p>
-<p th:text="Hello + ${name}"></p>
+<header>
+    <div id="First">
+        <p >First Page</p>
+        <p th:text="Hello"></p>
+        <nav>
+            <a href="/hello">Hello World</a> |
+            <a href="/capitalize/hello">Capitalize</a> |
+            <a href="/addAlbum">Add Album</a> |
+            <a href="/addSong">Add Song</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_626660256_2000108620009280158_388846.jpg" alt="Music" width="1330">
+
+</main>
+
+
+
+
 </body>
 </html>
+

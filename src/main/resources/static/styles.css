@@ -1,3 +1,19 @@
 p {
     color: blueviolet;
 }
+#First{
+      background-color: lightblue;
+}
+#First p {
+ text-align: center;
+}
+#First nav {
+ text-align: center;
+}
+
+#body2{
+background-color: #CDCDCD;
+}
+#body2 p{
+color:white;
+}
