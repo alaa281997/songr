@@ -2,20 +2,25 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Albums</title>
     <link th:href="@{/styles.css}" rel="stylesheet"/>
 
 </head>
-<body>
+<body id="body2">
 
 
-<h3 th:each="album:${albums}">
+<div th:each="album:${albums}">
 
     <p>Album ID: <span th:text=${album.id}></spanth:text></span></p>
     <p th:text="${album.title}"></p>
     <p th:text="${album.artist}"></p>
     <p th:text="${album.length}"></p>
     <p th:text="${album.imageUrl}"></p>
-</h3>
+    <div th:each="song: ${album.songs}">
+        <p th:text=" 'Songs: ' + ${song.title} + ': ' + ${song.length} + ' Seconds'"></p>
+    </div>
+    <a href="/addSong">Add Song </a>
+</div>
+
 </body>
 </html>

@@ -18,17 +18,25 @@ Controllers: <br>
 <hr>
 
 Lab: 13
+We need to create a Song model has a title, a length (in seconds), a trackNumber, and the album on which that song appears.
+we need to create relationship between Albums and Songs is appropriately set up.
+
+Functionality:
+
+- A user should be able to see information about all the songs on the site.
+- A user should be able to view a page with data about one particular album.
+- A user should be able to add songs to an album.
+- A user should be able to see the songs that belong to an album when looking at that album.
 
 
-
-*partners:*<br>
+*partners:* <br>
 We were working as navigator and driver, Alaa Al-Abbas and Amara Albalkhi
 
 <br>
 
 #### Table of contents
 | LAB #  |  url |   
-|---     |---|
+|---     |  --- |
 | Lab: 11 - Spring for Full-Stack Web Apps | [URL](https://github.com/alaa281997/songr/tree/lab11)   |  
 | Lab: 12 - Spring and REST |[URL](https://github.com/alaa281997/songr/tree/lab12)    |  
 | Lab: 13 - Related Resources and Integration Testing | [URL](https://github.com/alaa281997/songr/tree/lab13)  | 

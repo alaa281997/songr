@@ -3,30 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+  <style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
 </head>
 <body>
-<form action="/songs" method="post" style="text-align:center; border: 5px solid white; width: 750px; margin-left:auto; margin-right:auto">
+<div>
+  <form action="/songs" method="post" style="text-align:center; border: 5px solid white; width: 750px; margin-left:auto; margin-right:auto">
+    <label for="ftitle">Song Title</label>
+    <input type="text"  id="ftitle" name="title"  placeholder="Song Title.."/>
+
+    <label for="Track">Track Number</label>
+    <input type="number" name="trackNumber" id="Track" placeholder="Your last name..">
+
+    <label for="Length">Length</label>
+    <input id="Length" type="number" name="length">
+
+    <label for="Album">Album</label>
+    <input id="Album" type="number" name="albumID">
+    <input type="submit" value="Add Song!" style="color:black; font-size:larger; background-color: white; width: 150px; border: 2px ">
+
+  </form>
   <br>
-  <br>
-  <label style="color:white; font-size:x-large">Song Title</label>
-  <input type="text" name="title" />
-  <br>
-  <br>
-  <label style="color:white; font-size:x-large">Track Number</label>
-  <input type="number" name="trackNumber" />
-  <br>
-  <br>
-  <label style="color:white; font-size:x-large">Length</label>
-  <input type="number" name="length" />
-  <br>
-  <br>
-  <label style="color:white; font-size:x-large">Album</label>
-  <input type="number" name="albumID" />
-  <br>
-  <br>
-  <input type="submit" value="Add Song!" style="color:black; font-size:larger; background-color: white; width: 150px; border: 2px solid pink">
-  <br>
-  <br>
-</form>
+  <a href="/albums">Show Albums </a>
+</div>
 </body>
 </html>
